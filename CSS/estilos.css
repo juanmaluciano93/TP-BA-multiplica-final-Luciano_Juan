@@ -13,7 +13,6 @@ header, footer {
     padding: 1%;
 }
 
-
 /* Estilos para la sección principal */
 main {
     background-color: #c8c8c8;
@@ -121,6 +120,7 @@ form {
 /* Estilos para elementos de vídeo */
 .video {
     margin: 2% 0;
+    display: none;
 }
 
 .video iframe {
@@ -187,14 +187,21 @@ form {
     font-weight: bold;
 }
 
+#borrar, #enviar {
+    color: white;
+    font-size: 2vh;
+}
+
 #borrar {
     background-color: red;
-    color: white;
 }
 
 #enviar {
     background-color: green;
-    color: white;
+}
+
+#borrar:hover, #enviar:hover {
+    background-color: black;
 }
 
 .foto {
@@ -284,6 +291,20 @@ textarea {
     width: 100%;
 }
 
+/* Estilos para el elemento con clase .ocultarMostrar */
+.ocultarMostrar {
+    background-color: darkred;
+    color: yellow;
+    width: 100%;
+    margin-bottom: 3%;
+    padding: 1%;
+    border: solid black;
+    cursor: pointer;
+    font-size: 2.5vh;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 /* Agregado de animacion con nombre 'slideshow'*/
 @keyframes slideshow {
     0%, 100% {
@@ -340,7 +361,7 @@ textarea {
     }
 
     .icono {
-        width: 8%;
+        width: 10%;
     }
 
     #contenedor2 ol {
@@ -353,15 +374,16 @@ textarea {
         width: 100%;
     }
 
-    #tabla {
-        font-size: 3vw;
-    }
-
     .video iframe {
         height: 30vh;
     }
+
     .estilo {
         font-size: 3.5vw;
+    }
+
+    table, table tr th, table tr td {
+        font-size: 1.1em;
     }
 
 }
@@ -406,7 +428,7 @@ textarea {
     }
 
     .icono {
-        width: 6%;
+        width: 8%;
     }
 
     #contenedor2 ol {
